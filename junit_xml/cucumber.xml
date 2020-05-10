@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="22.226">
+    <testcase classname="FLIGHTS SEARCHING FROM DELHI" name="As a user, I want to search flights from Delhi, so that I can book flights" time="19.771">
+        <system-out>
+            <![CDATA[Given I have a request URL "https://voyager.goibibo.com/api/v2/flights_search/find_node_by_name_v2".passed
+When I send request "https://voyager.goibibo.com/api/v2/flights_search/find_node_by_name_v2" with endpiont "/?search_query=DEL&limit=15&v=2".passed
+Then I see response code 200................................................passed
+And I get the response......................................................passed
+And I verify the value at "data.r.n[0]" is "Delhi Airport"..................passed
+And I verify the value at "data.r.iata[0]" is "DEL".........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Sample post call" name="As a user, I want to do a sample post call" time="1.675">
+        <system-out>
+            <![CDATA[Given I have a request URL "https://jsonplaceholder.typicode.com/users".....passed
+When I send POST request "https://jsonplaceholder.typicode.com/users".......passed
+Then I see response code 201................................................passed
+And I get the response......................................................passed
+And I verify the value at "0.name" is "Krishna Rungta"......................passed
+And I verify the value at "0.address.city" is "Gwenborough".................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

@@ -1,0 +1,270 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-10T09:04:32.778Z",
+        "line": 3,
+        "name": "As a user, I want to search flights from Delhi, so that I can book flights",
+        "description": "",
+        "id": "flights-searching-from-delhi;as-a-user--i-want-to-search-flights-from-delhi--so-that-i-can-book-flights",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2999800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have a request URL \"https://voyager.goibibo.com/api/v2/flights_search/find_node_by_name_v2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://voyager.goibibo.com/api/v2/flights_search/find_node_by_name_v2\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinitions.FlightSearch.i_have_a_request_URL(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 18788428600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I send request \"https://voyager.goibibo.com/api/v2/flights_search/find_node_by_name_v2\" with endpiont \"/?search_query\u003dDEL\u0026limit\u003d15\u0026v\u003d2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://voyager.goibibo.com/api/v2/flights_search/find_node_by_name_v2\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"/?search_query\u003dDEL\u0026limit\u003d15\u0026v\u003d2\"",
+                  "offset": 102
+                }
+              ],
+              "location": "stepDefinitions.FlightSearch.i_send_request_with_endpiont(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14001100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I see response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinitions.FlightSearch.i_see_response_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27005800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I get the response",
+            "match": {
+              "location": "stepDefinitions.FlightSearch.i_get_response()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 714998200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I verify the value at \"data.r.n[0]\" is \"Delhi Airport\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"data.r.n[0]\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Delhi Airport\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinitions.FlightSearch.i_verify_the_value_at_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115004100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I verify the value at \"data.r.iata[0]\" is \"DEL\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"data.r.iata[0]\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"DEL\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepDefinitions.FlightSearch.i_verify_the_value_at_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "FLIGHTS SEARCHING FROM DELHI",
+    "description": "",
+    "id": "flights-searching-from-delhi",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/GETFlights.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-10T09:04:52.563Z",
+        "line": 3,
+        "name": "As a user, I want to do a sample post call",
+        "description": "",
+        "id": "sample-post-call;as-a-user--i-want-to-do-a-sample-post-call",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1998900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have a request URL \"https://jsonplaceholder.typicode.com/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://jsonplaceholder.typicode.com/users\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinitions.FlightSearch.i_have_a_request_URL(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1548545100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I send POST request \"https://jsonplaceholder.typicode.com/users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://jsonplaceholder.typicode.com/users\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinitions.POSTCall.i_send_POST_request(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1003400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I see response code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefinitions.FlightSearch.i_see_response_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2002200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I get the response",
+            "match": {
+              "location": "stepDefinitions.FlightSearch.i_get_response()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59998200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I verify the value at \"0.name\" is \"Krishna Rungta\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0.name\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Krishna Rungta\"",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinitions.FlightSearch.i_verify_the_value_at_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53004900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I verify the value at \"0.address.city\" is \"Gwenborough\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"0.address.city\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Gwenborough\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepDefinitions.FlightSearch.i_verify_the_value_at_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Sample post call",
+    "description": "",
+    "id": "sample-post-call",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/PostCall.feature",
+    "tags": []
+  }
+]
